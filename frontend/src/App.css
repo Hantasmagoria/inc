@@ -84,8 +84,61 @@ background-image: url('./data/backgroud.png') ;
   border: 2px dashed green;
 }
 
-/* .bg {
-  background-color: 111827;
-  height: 300px;
-  width: 200px;
-} */
+.e-pager .e-currentitem, .e-pager .e-currentitem:hover{
+  background:#46566C;
+  color: #fff !important;
+  opacity: 100;
+  border-radius: 8px;
+}
+
+.e-pager .e-currentitem, .e-pager .e-currentitem:active {
+  background:#46566C ;
+  color: #fff ;
+  opacity: 100 ;
+  border-radius: 8px ;
+}
+
+
+.e-pager {
+  background-color: #1F2937;
+  color: #fff;
+  opacity: 1;
+  border-radius: 8px;
+}
+
+.e-pager .e-numericitem {
+    background: #1F2937;
+    color: #fff;
+}
+
+.bg-color-own{
+  background-color: #1F2937;
+}
+
+
+
+/*Making the Container  white while maintaing the background color */
+ .e-pager .e-pagercontainer , .e-pager {
+  background-color: #1F2937;
+  color: #fff;
+} 
+
+/*Making the button white while maintaing the background color */
+ .e-pager div.e-icons.e-disable {
+  background-color: #1F2937;
+  color: #fff;
+  opacity: 100;
+} 
+
+/*Making the button white while maintaing the background color */
+ .e-pager .e-prevpagedisabled, .e-pager .e-prevpage, .e-pager .e-nextpage, .e-pager .e-nextpagedisabled, .e-pager .e-lastpagedisabled, .e-pager .e-lastpage, .e-pager .e-firstpage, .e-pager .e-firstpagedisabled{
+  background-color: #1F2937;
+  color: #fff !important;
+  opacity: 100;
+} 
+
+
+
+
+
+

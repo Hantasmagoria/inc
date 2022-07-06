@@ -10,7 +10,6 @@ import {
   BsShield,
 } from "react-icons/bs";
 
-import avatar from './avatar.jpg';
 import { GrLocation } from 'react-icons/gr';
 import { BiChart } from "react-icons/bi";
 import { RiUserSettingsLine } from "react-icons/ri";
@@ -84,11 +83,6 @@ export const dropdownData = [
 
 const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
-    <img
-      className="rounded-full w-10 h-10"
-      src={props.EmployeeImage}
-      alt="employee"
-    />
     <p>{props.Name}</p>
   </div>
 );
@@ -101,7 +95,7 @@ const gridEmployeeCountry = (props) => (
 );
 
 export const employeesGrid = [
-  { headerText: 'Employee',
+  { headerText: 'Name Of Opportunity',
     width: '150',
     template: gridEmployeeProfile,
     textAlign: 'Center' },
@@ -111,27 +105,27 @@ export const employeesGrid = [
     textAlign: 'Center',
   },
   { field: 'Title',
-    headerText: 'Designation',
+    headerText: 'Tender No.',
     width: '170',
     textAlign: 'Center',
   },
-  { headerText: 'Country',
+  { headerText: 'H&PS Account Level',
     width: '120',
     textAlign: 'Center',
     template: gridEmployeeCountry },
 
   { field: 'HireDate',
-    headerText: 'Hire Date',
+    headerText: 'Parent Agency (Ministry Level)',
     width: '135',
     format: 'yMd',
     textAlign: 'Center' },
 
   { field: 'ReportsTo',
-    headerText: 'Reports To',
+    headerText: 'Agency',
     width: '120',
     textAlign: 'Center' },
   { field: 'EmployeeID',
-    headerText: 'Employee ID',
+    headerText: 'Published Date',
     width: '125',
     textAlign: 'Center' },
 ];
@@ -142,43 +136,39 @@ export const employeesGrid = [
 export const procurementData = [
   {
     EmployeeID: 1,
-    Name: 'Nancy Davolio',
+    Name: 'Invitation to Tender for Application Maintenance and Support Services for the Accountant-General’s Department (AGD)',
     Title: 'Sales Representative',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar,
+  
   },
   {
     EmployeeID: 2,
-    Name: 'Nasimiyu Danai',
+    Name: 'Maintenance and Enhancement of Healthcare and Medical Insurance Systems',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 3,
-    Name: 'Iulia Albu',
+    Name: 'Maintenance and Enhancement of Healthcare and Medical Insurance Systems',
     Title: 'HR',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
-    Name: 'Siegbert Gottfried',
+    Name: 'Request for Proposal (RFP) for Online Engagement Strategy Development and Operational Support',
     Title: 'Marketing Head',
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -187,8 +177,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -197,8 +186,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -207,8 +195,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 1,
@@ -217,8 +204,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar,
+  
 
   },
   {
@@ -228,8 +214,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 3,
@@ -238,8 +223,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -248,8 +232,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -258,8 +241,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -268,8 +250,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -278,8 +259,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 1,
@@ -288,8 +268,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar,
+  
   },
   {
     EmployeeID: 2,
@@ -298,8 +277,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 3,
@@ -308,8 +286,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -318,8 +295,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -328,8 +304,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -338,8 +313,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -348,8 +322,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 1,
@@ -358,8 +331,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar,
+  
 
   },
   {
@@ -369,8 +341,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 3,
@@ -379,8 +350,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -389,8 +359,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -399,8 +368,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -409,8 +377,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -419,8 +386,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 1,
@@ -429,8 +395,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar,
+  
 
   },
   {
@@ -440,8 +405,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 3,
@@ -450,8 +414,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -460,8 +423,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar,
+  
   },
   {
     EmployeeID: 5,
@@ -470,8 +432,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar,
+  
   },
   {
     EmployeeID: 4,
@@ -480,8 +441,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -490,8 +450,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 1,
@@ -500,8 +459,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar,
+  
 
   },
   {
@@ -511,8 +469,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 3,
@@ -521,8 +478,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -531,8 +487,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -541,8 +496,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -551,8 +505,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -561,8 +514,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 1,
@@ -571,8 +523,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar,
+  
 
   },
   {
@@ -582,8 +533,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 3,
@@ -592,8 +542,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -602,8 +551,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -612,8 +560,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -622,8 +569,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -632,8 +578,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 1,
@@ -642,8 +587,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar,
+  
 
   },
   {
@@ -653,8 +597,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 3,
@@ -663,8 +606,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -673,8 +615,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -683,8 +624,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -693,8 +633,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -703,8 +642,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 1,
@@ -713,8 +651,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-    avatar,
+  
 
   },
   {
@@ -724,8 +661,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 3,
@@ -734,8 +670,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -744,8 +679,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -754,8 +688,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 4,
@@ -764,8 +697,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
   {
     EmployeeID: 5,
@@ -774,8 +706,7 @@ export const procurementData = [
     HireDate: '01/02/2021',
     Country: 'USA',
     ReportsTo: 'Carson',
-    EmployeeImage:
-      avatar,
+       
   },
 ];
 
