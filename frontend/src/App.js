@@ -1,26 +1,27 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { TooltipComponent } from '@syncfusion/ej2-react-popups';
+import React, { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
-import { Navbar, Footer, Sidebar } from './components';
+import { Navbar, Footer, Sidebar } from "./components";
 import Dashboard from "./pages/Dashboard";
-import  Upload  from "./pages/Upload";
-import Data from "./pages/Data"
-import './App.css';
+import Upload from "./pages/Upload";
+import Data from "./pages/Data";
+import "./App.css";
 
-import { useStateContext } from './contexts/ContextProvider';
+import { useStateContext } from "./contexts/ContextProvider";
 
 const App = () => {
-  const { setCurrentColor, setCurrentMode, currentMode, activeMenu } = useStateContext();
+  const { setCurrentColor, setCurrentMode, currentMode, activeMenu } =
+    useStateContext();
 
   useEffect(() => {
-    const currentThemeColor = localStorage.getItem('colorMode');
-    const currentThemeMode = localStorage.getItem('themeMode');
+    const currentThemeColor = localStorage.getItem("colorMode");
+    const currentThemeMode = localStorage.getItem("themeMode");
     if (currentThemeColor && currentThemeMode) {
       setCurrentColor(currentThemeColor);
       setCurrentMode(currentThemeMode);
     }
-  }, []);
+  }, [setCurrentColor, setCurrentMode]);
 
   return (
     <div className={currentMode === "Dark" ? "dark" : ""}>
