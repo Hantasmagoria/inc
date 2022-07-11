@@ -24,17 +24,7 @@ const Sidebar = () => {
           <div className="flex justify-between items-center">
             <Link to="/" onClick={handleCloseSideBar} className="items-center flex ">
              <img alt= "logo" src={require('../data/logo.png')} width="250" height="150" style={{ alignSelf: 'center', marginLeft: 25  }}/> 
-            </Link>
-            {/* <nav content="Menu" position="BottomCenter">
-              <button
-                type="button"
-                onClick={() => setActiveMenu(!activeMenu)}
-                style={{ color: currentColor }}
-                className="text-xl rounded-full p-3 hover:bg-light-gray mt-4 block md:hidden"
-              >
-                <MdOutlineCancel />
-              </button> 
-           </nav> */}
+            </Link>w  
           </div>
           <div className="mt-10 ">
             {links.map((item) => (

@@ -16,14 +16,14 @@ useEffect(() => {
 
   return (
     <div className="bg-color-own m-2 md:m-10 mt-24 p-2 md:p-10  rounded-3xl">
-      <Header  category="Page" title="GeBiz Procurement" />
+      <Header   title="GeBiz Procurement" />
       
       <GridComponent
         dataSource={procurementData}
         width="auto"
         allowPaging
         allowSorting
-        pageSettings={{ pageCount: 5 }}
+        pageSettings={{ pageCount: 6 }}
         editSettings={editing}
         toolbar={toolbarOptions}
       >
